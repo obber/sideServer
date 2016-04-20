@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset='utf-8' />
+
+<link rel="stylesheet" href="style.css">
+  <script>
+  var app = {};
+  </script>
+
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+
+<!-- Firebase -->
+<script src='https://cdn.firebase.com/js/client/2.0.2/firebase.js'></script>
+
+<!-- Firechat -->
+<link rel='stylesheet' href='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css' />
+<script src='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js'></script>
+<script src="main.js"></script>
+<head>
+
+  <body>
+
+  <a href="#" onclick="app.getTokenFromServer()">Get Token</a>
+
+  <div id='firechat-wrapper'>
+    
+  <!--example from documentation-->
+  <a href='#' onclick='app.login();'>Login</a>
+
+
+  <div id='chatroom'>
+    <ul id="example-messages"></ul>
+
+  </div>
+
+  <input type="text" placeholder="name" id="nameInput">
+  <input type="text" placeholder="message" id="messageInput">
+
+  <button value="submit">Send Message</button>
+
+  </div>
+  </body>
+</html>
